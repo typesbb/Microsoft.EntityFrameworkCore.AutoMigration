@@ -30,7 +30,7 @@ namespace Microsoft.EntityFrameworkCore.AutoMigration.Test
 
             var databaseCreator = ctx.GetService<IRelationalDatabaseCreator>();
             var m = ctx.Database.GetMigrations();
-            await ctx.GetService<IMigrator>().MigrateAsync();
+            await ctx.GetService<IRelationalAutoMigrator>().MigrateAsync();
             //databaseCreator.GenerateCreateScript
             //ctx.Database.GetPendingMigrations
             //ctx.Database.GetRelationalService<IMigrationsAssembly>()

@@ -7,6 +7,31 @@
 		<RootNamespace>Microsoft.EntityFrameworkCore.Migrations</RootNamespace>
 	</PropertyGroup>
 
+	<PropertyGroup>
+		<SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageId>Microsoft.EntityFrameworkCore.AutoMigration</PackageId>
+		<PackageVersion>1.0.0</PackageVersion>
+		<Authors>typesbb</Authors>
+		<PackageProjectUrl>https://github.com/typesbb/Microsoft.EntityFrameworkCore.AutoMigration</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/typesbb/Microsoft.EntityFrameworkCore.AutoMigration</RepositoryUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageTags>EntityFrameworkCore auto migration</PackageTags>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<Description>Auto migration for EntityFrameworkCore8.0+,only relational databases are supported.</Description>
+		<Copyright>Copyright</Copyright>
+		<DevelopmentDependency>true</DevelopmentDependency>
+		<NoPackageAnalysis>true</NoPackageAnalysis>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+
 	<ItemGroup>
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.11" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.11" />
