@@ -10,7 +10,7 @@
 	<PropertyGroup>
 		<SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<PackageId>Microsoft.EntityFrameworkCore.AutoMigration</PackageId>
+		<PackageId>EntityFrameworkCore.AutoMigration</PackageId>
 		<PackageVersion>1.0.0</PackageVersion>
 		<Authors>typesbb</Authors>
 		<PackageProjectUrl>https://github.com/typesbb/Microsoft.EntityFrameworkCore.AutoMigration</PackageProjectUrl>
